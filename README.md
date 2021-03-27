@@ -76,3 +76,19 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Pdf Download Tutorial
+
+https://reffect.co.jp/laravel/laravel-dompdf70-japanese
+
+1. Install
+composer require barryvdh/laravel-dompdf
+
+2. Import PDF in controller
+use Barryvdh\DomPDF\Facade as PDF;
+
+3. Download load_font.php and copy to project
+php load_font.php ipag.ttf ipag.ttf
+
+4. Copy lib/fonts to storage/fonts 
+cp lib/fonts/* /storage/fonts/
